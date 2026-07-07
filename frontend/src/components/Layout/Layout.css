@@ -1,0 +1,82 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #1e293b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  padding: 24px 20px;
+  border-bottom: 1px solid #334155;
+}
+
+.sidebar-header h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.user-info p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.user-role {
+  font-size: 12px;
+  background: #3b82f6;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  list-style: none;
+  flex: 1;
+  padding: 20px 0;
+}
+
+.nav-menu li {
+  margin: 4px 12px;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #cbd5e1;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+  background: #334155;
+  color: white;
+}
+
+.logout-btn {
+  margin: 20px;
+  padding: 12px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px;
+  padding: 24px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
